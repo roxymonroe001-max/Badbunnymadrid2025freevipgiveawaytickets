@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎟️ Confirmado: ¡Tus Entradas VIP + €100 Bono! | Boletos VIP España</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #000000, #1f1f1f);
+      color: #fff;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+    h1 {
+      font-size: 2.2em;
+      color: #00ffcc;
+      text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+      margin-bottom: 0.2em;
+    }
+    h2 {
+      font-size: 1.2em;
+      color: #ffffffaa;
+      margin-bottom: 1em;
+    }
+    .countdown {
+      font-size: 1.1em;
+      background: #ff0033;
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      margin-bottom: 1em;
+      box-shadow: 0 0 10px #ff0033, 0 0 20px #ff0033;
+    }
+    .instructions {
+      text-align: left;
+      max-width: 400px;
+      background: #222;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00ffcc;
+      font-size: 1em;
+      line-height: 1.6em;
+      margin-bottom: 1.5em;
+    }
+    .button {
+      background: #00ffcc;
+      color: #000;
+      padding: 14px 28px;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 12px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+      transition: transform 0.2s;
+    }
+    .button:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 0.8em;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>🎉 ¡Confirmado! 2 Entradas VIP + Bono de €100 🔥</h1>
+  <h2>Bad Bunny - Gira España 2025 | Boletos VIP España</h2>
+
+  <div class="countdown">
+    ⏳ TIEMPO RESTANTE: <span id="timer">03:00</span>  
+    <br>🔥 ENTRADAS DISPONIBLES: 173 / 1,000
+  </div>
+
+  <div class="instructions">
+    💼 <strong>¿CÓMO DESBLOQUEAR TU PASE + BONO DE €100?</strong><br><br>
+    1️⃣ TOCA EL BOTÓN 🔓 DESBLOQUEAR PREMIO ABAJO<br>
+    ➡️ ESTÁS A UN CLIC DEL REGALO<br><br>
+    2️⃣ INGRESA TU NÚMERO MÓVIL<br>
+    ➡️ PARA DEMOSTRAR QUE ERES UN VERDADERO FAN DE BAD BUNNY 🐰💯<br><br>
+    3️⃣ RECIBE TU PIN SECRETO AL INSTANTE<br>
+    ➡️ SIN ESPERAS. SIN MENTIRAS. SOLO VELOCIDAD ⚡📲<br><br>
+    4️⃣ CONFIRMA Y DESBLOQUEA TU PASE VIP<br>
+    ➡️ 🎟️ ENTRADA GRATIS + 💶 €100 DIRECTO A TU MÓVIL<br><br>
+    🛑 <strong>ATENCIÓN:</strong> SOLO FUNCIONA UNA VEZ POR FAN — NO LA CAGUES
+  </div>
+
+  <a class="button" href="https://singingfiles.com/show.php?l=0&u=2428539&id=70889" target="_blank">
+    🔓 DESBLOQUEAR ENTRADAS
+  </a>
+
+  <footer>
+    © 2025 Boletos VIP España · Todos los derechos reservados
+  </footer>
+
+  <script>
+    let timer = 180; // 3 mins
+    const display = document.getElementById("timer");
+    const interval = setInterval(() => {
+      const minutes = Math.floor(timer / 60);
+      const seconds = timer % 60;
+      display.textContent = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+      timer--;
+      if (timer < 0) {
+        clearInterval(interval);
+        display.textContent = "00:00";
+      }
+    }, 1000);
+  </script>
+
+</body>
+</html>
